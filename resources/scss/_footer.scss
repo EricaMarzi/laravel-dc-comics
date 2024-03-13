@@ -1,0 +1,91 @@
+footer {
+    height: 400px;
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Upper Footer */
+h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.upper-footer {
+    display: flex;
+    position: relative;
+}
+
+.upper-footer a {
+    color: #797979;
+    font-size: 12px;
+}
+
+.footer-list {
+    height: 400px;
+    width: 40%;
+    padding-top: 50px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.col {
+    width: calc(100% / 3);
+}
+
+h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.upper-footer a {
+    color: #797979;
+    font-size: 12px;
+}
+
+/*DC Logo */
+.logo-bg img {
+    position: absolute;
+    right: 0;
+    top: -90px;
+
+}
+
+/*Bottom Footer */
+.bottom-footer {
+    height: 110px;
+    background-color: #303030;
+
+    position: relative;
+    z-index: 1;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 0;
+}
+
+button.sing {
+    text-transform: uppercase;
+    background-color: #303030;
+    border: 2px solid #0282f9;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.follow-socials h2 {
+    text-transform: uppercase;
+    color: #0282f9;
+    letter-spacing: -2px;
+}
+
+.follow-socials ul {
+    display: flex;
+    gap: 20px;
+}
