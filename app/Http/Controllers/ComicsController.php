@@ -9,7 +9,7 @@ class ComicsController extends Controller
 {
     public function __invoke()
     {
-        $comics = config('comics');
+        $comics = Comic::all();
 
         return view('comics', compact('comics'));
     }
