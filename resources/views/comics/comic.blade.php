@@ -34,21 +34,13 @@
             <div class="info">
                 <h5>Art by:</h5>
                 <p>
-                    <span>
-                        @foreach($comics['artists'] as $artist)
-                        {{$artist}}
-                        @endforeach
-                    </span>
+                    <span>{{$comics['artists']}}</span>
                 </p>
             </div>
             <div class="info">
                 <h5>Written by:</h5>
                 <p>
-                    <span>
-                        @foreach($comics['writers'] as $writer)
-                        {{$writer}}
-                        @endforeach
-                    </span>
+                    <span>{{$comics['writers']}}</span>
                 </p>
             </div>
         </div>
