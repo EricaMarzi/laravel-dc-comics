@@ -19,17 +19,6 @@ Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
 
-// Lista fumetti
-Route::get('/', ComicsController::class)->name('comics');
-
-// Dettaglio fumetto
-Route::get('/comics/{index}', function ($index) {
-
-    $comics = config('comics');
-
-    return view('comics.comic', ['comics' => $comics[$index]]);
-})->name('comic');
-
 Route::get('/movie', function () {
 
     return view('movie');
@@ -69,3 +58,19 @@ Route::get('/shop', function () {
 
     return view('shop');
 })->name('shop');
+
+
+
+
+// Lista fumetti
+// Route::get('/', ComicsController::class)->name('comics');
+Route::get('/', [ComicsController::class, 'index'])->name('comics.index');
+Route::get('/{comic}', [ComicsController::class, 'show'])->name('comics.show');
+
+// Dettaglio fumetto
+// Route::get('/comics/{index}', function ($index) {
+
+//     $comics = config('comics');
+
+//     return view('comics.comic', ['comics' => $comics[$index]]);
+// })->name('comic');

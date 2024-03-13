@@ -1,3 +1,3 @@
 <?php
 
-return ['characters', 'comics', 'movie', 'TV', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
+return ['characters', 'comics.index', 'movie', 'TV', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
