@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,81 +15,57 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/characters', function () {
-    $title = 'Characters';
 
-    return view('characters', compact('title'));
+    return view('characters');
 })->name('characters');
 
 // Lista fumetti
-Route::get('/', function () {
-    $title = 'Comics';
-
-    $comics = config('comics');
-
-    return view('comics', compact('title', 'comics'));
-})->name('comics');
+Route::get('/', ComicsController::class)->name('comics');
 
 // Dettaglio fumetto
 Route::get('/comics/{index}', function ($index) {
-    $title = 'Comic';
 
     $comics = config('comics');
 
-    return view('comics.comic', compact('title'), ['comics' => $comics[$index]]);
+    return view('comics.comic', ['comics' => $comics[$index]]);
 })->name('comic');
 
 Route::get('/movie', function () {
-    $title = 'Movie';
 
-
-    return view('movie', compact('title'));
+    return view('movie');
 })->name('movie');
 
 Route::get('/tv', function () {
-    $title = 'TV';
 
-
-    return view('TV', compact('title'));
+    return view('TV');
 })->name('TV');
 
 Route::get('/games', function () {
-    $title = 'Games';
 
-
-    return view('games', compact('title'));
+    return view('games');
 })->name('games');
 
 Route::get('/collectibles', function () {
-    $title = 'Collectible';
 
-
-    return view('collectibles', compact('title'));
+    return view('collectibles');
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    $title = 'Videos';
 
-
-    return view('videos', compact('title'));
+    return view('videos');
 })->name('videos');
 
 Route::get('/fans', function () {
-    $title = 'Fans';
 
-
-    return view('fans', compact('title'));
+    return view('fans');
 })->name('fans');
 
 Route::get('/news', function () {
-    $title = 'News';
 
-
-    return view('news', compact('title'));
+    return view('news');
 })->name('news');
 
 Route::get('/shop', function () {
-    $title = 'Shop';
 
-
-    return view('shop', compact('title'));
+    return view('shop');
 })->name('shop');
