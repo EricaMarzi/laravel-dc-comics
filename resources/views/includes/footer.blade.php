@@ -25,7 +25,7 @@
     <div class="bottom-footer">
         <div class="container">
             <div class="flex">
-                <button class="sing">Sign-up now!</button>
+                <button class="btn-custom">Sign-up now!</button>
                 <div class="follow-socials">
                     <ul>
                         <li>
