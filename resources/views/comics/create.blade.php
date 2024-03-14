@@ -14,9 +14,37 @@
         </div>
         <div class="mb-3">
             <label for="comic-description" class="form-label text-white">Descrizione</label>
-            <textarea class="form-control" placeholder="Leave a comment here" id="comic-description">
-            <!-- <input type="text" class="form-control" id="comic-description"> -->
+            <textarea class="form-control" placeholder="Leave a comment here" id="comic-description"></textarea>
         </div>
+        <div class="mb-3">
+            <label for="comic-thumb" class="form-label text-white">Immagine</label>
+            <input type="text" class="form-control" id="comic-thumb">
+        </div>
+        <div class="mb-3">
+            <label for="comic-price" class="form-label text-white">Prezzo</label>
+            <input type="text" class="form-control" id="comic-price">
+        </div>
+        <div class="mb-3">
+            <label for="comic-series" class="form-label text-white">Serie</label>
+            <input type="text" class="form-control" id="comic-series">
+        </div>
+        <div class="mb-3">
+            <label for="comic-date" class="form-label text-white">Data di pubblicazione</label>
+            <input type="text" class="form-control" id="comic-date">
+        </div>
+        <div class="mb-3">
+            <label for="comic-type" class="form-label text-white">Tipo</label>
+            <input type="text" class="form-control" id="comic-type">
+        </div>
+        <div class="mb-3">
+            <label for="comic-artists" class="form-label text-white">Disegnatori</label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="comic-artists"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="comic-writers" class="form-label text-white">Scrittori</label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="comic-writers"></textarea>
+        </div>
+
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
