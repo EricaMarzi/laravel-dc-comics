@@ -64,4 +64,5 @@ Route::get('/shop', function () {
 
 // Lista fumetti
 Route::get('/', [ComicsController::class, 'index'])->name('comics.index');
+Route::get('/create', [ComicsController::class, 'create'])->name('comics.create');
 Route::get('/{comic}', [ComicsController::class, 'show'])->name('comics.show');

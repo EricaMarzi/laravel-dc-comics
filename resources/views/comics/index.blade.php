@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="d-flex justify-content-end my-5">
-        <a href="" class="btn-custom">Aggiungi Fumetto</a>
+        <a href="{{route('comics.create')}}" class="btn-custom">Aggiungi Fumetto</a>
     </div>
 </div>
 @endsection
