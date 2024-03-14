@@ -7,42 +7,43 @@
 
 @section('main-content')
 <div class="container">
-    <form action="" method="POST" class="my-5">
+    <form action="{{route('comics.store')}}" method="POST" class="my-5">
+        @csrf
         <div class="mb-3">
-            <label for="comic-title" class="form-label text-white">Titolo</label>
-            <input type="text" class="form-control" id="comic-title">
+            <label for="title" class="form-label text-white">Titolo</label>
+            <input type="text" name="title" class="form-control" id="title">
         </div>
         <div class="mb-3">
-            <label for="comic-description" class="form-label text-white">Descrizione</label>
-            <textarea class="form-control" placeholder="Leave a comment here" id="comic-description"></textarea>
+            <label for="description" class="form-label text-white">Descrizione</label>
+            <textarea name="description" class="form-control" placeholder="Leave a comment here" id="description"></textarea>
         </div>
         <div class="mb-3">
-            <label for="comic-thumb" class="form-label text-white">Immagine</label>
-            <input type="text" class="form-control" id="comic-thumb">
+            <label for="thumb" class="form-label text-white">Url immagine</label>
+            <input type="text" name="thumb" class="form-control" id="thumb">
         </div>
         <div class="mb-3">
-            <label for="comic-price" class="form-label text-white">Prezzo</label>
-            <input type="text" class="form-control" id="comic-price">
+            <label for="price" class="form-label text-white">Prezzo</label>
+            <input type="text" name="price" class="form-control" id="price">
         </div>
         <div class="mb-3">
-            <label for="comic-series" class="form-label text-white">Serie</label>
-            <input type="text" class="form-control" id="comic-series">
+            <label for="series" class="form-label text-white">Serie</label>
+            <input type="text" name="series" class="form-control" id="series">
         </div>
         <div class="mb-3">
-            <label for="comic-date" class="form-label text-white">Data di pubblicazione</label>
-            <input type="text" class="form-control" id="comic-date">
+            <label for="sale_date" class="form-label text-white">Data di pubblicazione (anno/mese/giorno)</label>
+            <input type="text" name="sale_date" class="form-control" id="sale_date">
         </div>
         <div class="mb-3">
-            <label for="comic-type" class="form-label text-white">Tipo</label>
-            <input type="text" class="form-control" id="comic-type">
+            <label for="type" class="form-label text-white">Tipo</label>
+            <input type="text" name="type" class="form-control" id="type">
         </div>
         <div class="mb-3">
-            <label for="comic-artists" class="form-label text-white">Disegnatori</label>
-            <textarea class="form-control" placeholder="Leave a comment here" id="comic-artists"></textarea>
+            <label for="artists" class="form-label text-white">Disegnatori</label>
+            <textarea name="artists" class="form-control" placeholder="Leave a comment here" id="artists"></textarea>
         </div>
         <div class="mb-3">
-            <label for="comic-writers" class="form-label text-white">Scrittori</label>
-            <textarea class="form-control" placeholder="Leave a comment here" id="comic-writers"></textarea>
+            <label for="writers" class="form-label text-white">Scrittori</label>
+            <textarea name="writers" class="form-control" placeholder="Leave a comment here" id="writers"></textarea>
         </div>
 
 

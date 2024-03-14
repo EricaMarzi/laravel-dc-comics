@@ -18,6 +18,17 @@ class ComicsController extends Controller
         return view('comics.create');
     }
 
+    public function store(Request $request)
+    {
+        $data = $request->all();
+        $comic = new Comic();
+        $comic->fill($data);
+
+        $comic->save();
+
+        return redirect()->route('comics.show', $comic->id);
+    }
+
     public function show(Comic $comic)
     {
         return view('comics.show', compact('comic'));
