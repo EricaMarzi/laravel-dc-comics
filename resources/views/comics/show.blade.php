@@ -7,20 +7,20 @@
 <section class="comic">
     <figure>
         <div class="info-comic book">Comic book</div>
-        <img src="{{$comics['thumb']}}" alt="{{$comics['title']}}">
+        <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
         <div class="info-comic gallery">View gallery</div>
     </figure>
     <div class="container flex">
         <div class="description">
-            <h1 class="comic-title">{{$comics['title']}}</h1>
+            <h1 class="comic-title">{{$comic->title}}</h1>
             <div class="buy-info">
                 <div class="price-available">
-                    <div class="price"><span>U.S. Price:</span> {{$comics['price']}}</div>
+                    <div class="price"><span>U.S. Price:</span> {{$comic->price}}</div>
                     <div class="available">Available</div>
                 </div>
                 <div class="check">Check Availability <i class="fa-solid fa-caret-down"></i></div>
             </div>
-            <p>{{$comics['description']}}</p>
+            <p>{{$comic->description}}</p>
         </div>
         <div class="adv">
             <img src="{{asset('images/adv.jpg')}}" alt="Power Visa">
@@ -34,13 +34,13 @@
             <div class="info">
                 <h5>Art by:</h5>
                 <p>
-                    <span>{{$comics['artists']}}</span>
+                    <span>{{$comic->artists}}</span>
                 </p>
             </div>
             <div class="info">
                 <h5>Written by:</h5>
                 <p>
-                    <span>{{$comics['writers']}}</span>
+                    <span>{{$comic->writers}}</span>
                 </p>
             </div>
         </div>
@@ -48,15 +48,15 @@
             <h2>Specs</h2>
             <div class="info">
                 <h5>Series:</h5>
-                <p><span class="series">{{$comics['series']}}</span></p>
+                <p><span class="series">{{$comic->series}}</span></p>
             </div>
             <div class="info">
                 <h5>U.S. Price:</h5>
-                <p>{{$comics['price']}}</p>
+                <p>{{$comic->price}}</p>
             </div>
             <div class="info">
                 <h5>On Sale Date:</h5>
-                <p>{{$comics['sale_date']}}</p>
+                <p>{{$comic->sale_date}}</p>
             </div>
         </div>
     </div>

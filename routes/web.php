@@ -63,14 +63,5 @@ Route::get('/shop', function () {
 
 
 // Lista fumetti
-// Route::get('/', ComicsController::class)->name('comics');
 Route::get('/', [ComicsController::class, 'index'])->name('comics.index');
 Route::get('/{comic}', [ComicsController::class, 'show'])->name('comics.show');
-
-// Dettaglio fumetto
-// Route::get('/comics/{index}', function ($index) {
-
-//     $comics = config('comics');
-
-//     return view('comics.comic', ['comics' => $comics[$index]]);
-// })->name('comic');
