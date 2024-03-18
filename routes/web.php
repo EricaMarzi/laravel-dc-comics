@@ -63,9 +63,10 @@ Route::get('/shop', function () {
 
 
 // Lista fumetti
-Route::get('/', [ComicsController::class, 'index'])->name('comics.index');
-Route::get('/create', [ComicsController::class, 'create'])->name('comics.create');
-Route::get('/{comic}', [ComicsController::class, 'show'])->name('comics.show');
-Route::get('/{comic}/edit', [ComicsController::class, 'edit'])->name('comics.edit');
-Route::put('/{comic}', [ComicsController::class, 'update'])->name('comics.update');
-Route::post('/', [ComicsController::class, 'store'])->name('comics.store');
+Route::get('/', [ComicsController::class, 'index'])->name('comics.index'); //Rotta home/lista comics
+Route::get('/create', [ComicsController::class, 'create'])->name('comics.create'); //Rotta per il form di creazione
+Route::get('/{comic}', [ComicsController::class, 'show'])->name('comics.show'); // Rotta per il singolo comic
+Route::get('/{comic}/edit', [ComicsController::class, 'edit'])->name('comics.edit'); //Rotta per il form di modifica
+Route::put('/{comic}', [ComicsController::class, 'update'])->name('comics.update'); // Rotta per il salvataggio sul DB della modifica
+Route::post('/', [ComicsController::class, 'store'])->name('comics.store'); // Rotta per il salvataggio sul DB
+Route::delete('/{comic}', [ComicsController::class, 'destroy'])->name('comics.destroy'); // Rotta per l'eliminazione
