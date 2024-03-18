@@ -60,5 +60,12 @@
             </div>
         </div>
     </div>
+    <div class="btn-action container">
+        <a href="{{route('comics.edit', $comic->id)}}" class="btn-custom">Modifica</a>
+        <a href="{{route('comics.index')}}" class="btn-custom">Elimina</a> <!--Rotta da creare-->
+        <a href="{{route('comics.index')}}" class="btn-custom">Torna indietro</a>
+    </div>
+
 </section>
+
 @endsection
